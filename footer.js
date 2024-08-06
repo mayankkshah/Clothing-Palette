@@ -1,7 +1,7 @@
 const footerHTML = `<footer class="section-footer">
       <div class="footer-container container">
         <div class="content_1">
-          <img src="./public/images/Logo1.png" alt="logo" />
+          <img src="./images/Logo1.png" alt="logo" />
           <p>
             Welcome to Clothing-Paletee, where comfort meets style in every
             stitch
