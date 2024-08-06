@@ -72,10 +72,10 @@ li {
 }
 
 a {
-  color: #646cff;
+  color: #4cc9f0;
   text-decoration: none;
   &:hover {
-    color: #535bf2;
+    color: #b5e2fa;
   }
 }
 
@@ -87,9 +87,9 @@ a {
 
 /*! layout */
 .container {
-  max-width: 142rem;
+  max-width: 130rem;
   margin: 0 auto;
-  padding: 9.6rem 2.4rem;
+  padding: 2.5rem 2.4rem;
 }
 
 :is(
@@ -220,7 +220,7 @@ textarea:focus-visible {
     font-size: 1.5rem;
   }
 
-  & .sing_in_up {
+  & .sign_in_up {
     display: flex;
     gap: 3.2rem;
   }
@@ -240,7 +240,7 @@ textarea:focus-visible {
 }
 
 .section-navbar img {
-  width: 25%;
+  width: 15%;
 }
 
 .section-navbar .navbar ul {
@@ -281,39 +281,18 @@ textarea:focus-visible {
 /***** Hero Section *****/
 
 main {
-  height: 84vh;
+  height: 90vh;
   position: relative;
   background-color: #d9e9ff;
 
   background-image: linear-gradient(
     to top right,
-    #3d86fa,
-    #4484fb,
-    #679eff,
-    #b3d2ff,
-    #ebf3fe
+    #ffc8dd,
+    #ffafcc,
+    #ffb3c6,
+    #ffc2d1,
+    #ffe5ec
   );
-}
-
-.custom-shape-divider-bottom-1696038172 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1696038172 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 12rem;
-}
-
-.custom-shape-divider-bottom-1696038172 .shape-fill {
-  fill: #ffffff;
 }
 
 main .section-hero {
@@ -335,7 +314,7 @@ main .section-hero {
     letter-spacing: 0.2rem;
     font-size: 1.7rem;
     word-spacing: 0.2rem;
-    color: #003b99;
+    color: #118ab2;
     font-weight: 700;
   }
 
@@ -344,7 +323,7 @@ main .section-hero {
     line-height: 1.5;
     initial-letter: -0.2rem;
     text-transform: capitalize;
-    color: #003b99;
+    color: #118ab2;
     font-family: "Jost";
   }
 
@@ -357,7 +336,11 @@ main .section-hero {
 .section-hero img {
   width: 100%;
   height: auto;
-  transform: scaleX(-1);
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 
 /***** End Hero Section *****/
@@ -386,11 +369,11 @@ main .section-hero {
   & p {
     text-transform: uppercase;
     font-size: 1.4rem;
-    color: #1f36b9;
+    color: #02248a;
   }
 
   & h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-transform: capitalize;
     margin: 0.6rem 0 1.6rem 0;
   }
@@ -420,6 +403,22 @@ main .section-hero {
     height: auto;
   }
 
+  &:first-child img {
+    transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+  }
+
+  &:nth-last-child(2) img {
+    transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+  }
+
   &:last-child img {
     transform: rotate(5deg);
     -moz-transform: rotate(5deg);
@@ -428,8 +427,8 @@ main .section-hero {
     -webkit-transform: rotate(5deg);
   }
 
-  & .extra-laptop img {
-    width: 28rem;
+  & .extra-offer img {
+    width: 16rem;
     height: auto;
   }
 }
@@ -929,7 +928,7 @@ footer {
 
 .category {
   background-color: #e7d6d6;
-  padding: 0.3rem 1.2rem;
+  padding: 0.4rem 0.2rem;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   border-radius: 10rem;
@@ -1065,6 +1064,41 @@ footer {
     }
   }
 
+  .section-navbar .navbar ul {
+    display: flex;
+    gap: 2.2rem;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    & li a {
+      color: var(--heading-color);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        width: 0%;
+        border-bottom: 0.1rem solid var(--main-color);
+        transition: all 0.3s linear;
+      }
+    }
+    & li a:hover {
+      color: var(--main-color);
+    }
+
+    & li a:hover:after {
+      width: 100%;
+    }
+  }
+
   .contact-title {
     font-size: 2.4rem;
   }
@@ -1078,6 +1112,13 @@ footer {
 @media (width <= 980px) {
   body {
     padding: 0 0.6rem;
+  }
+
+  .container .navbar-brand a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .section-products #productContainer {
@@ -1138,6 +1179,10 @@ footer {
 }
 
 @media (width <= 768px) {
+  main {
+    height: 100vh;
+  }
+
   .grid-two--cols {
     grid-template-columns: 1fr;
   }
@@ -1152,6 +1197,50 @@ footer {
 
   .section-hero .hero-heading {
     font-size: 4.2rem;
+  }
+
+  .section-hero .section-hero--content {
+    order: 2;
+    margin: -10px;
+  }
+
+  .section-navbar .navbar ul {
+    display: flex;
+    gap: 2.5rem;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    & li a {
+      color: var(--heading-color);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        width: 0%;
+        border-bottom: 0.1rem solid var(--main-color);
+        transition: all 0.3s linear;
+      }
+    }
+    & li a:hover {
+      color: var(--main-color);
+    }
+
+    & li a:hover:after {
+      width: 100%;
+    }
+  }
+
+  .section-products .container .section-common--heading {
+    text-align: center;
   }
 
   .section-products #productContainer {
@@ -1215,6 +1304,21 @@ footer {
 
   :is(.section-contact--homepage) .container:first-child {
     padding: 6.4rem 0rem 2.4rem 0rem;
+  }
+}
+
+@media (width <= 435px) {
+  main {
+    height: 130vh;
+  }
+
+  .section-navbar .navbar ul {
+    display: flex;
+    gap: 0.9rem;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 /***** End  media queries Section *****/

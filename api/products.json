@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "name": "Festive Glamour",
+    "category": "Festive Collection",
+    "brand": "Clothing Palette",
+    "price": 2499,
+    "stock": 25,
+    "description": "Festive Glamour, our exclusive women's collection designed to add a touch of elegance and sparkle to your festive celebrations.",
+    "image": "./images/festive.png"
+    
+  },
+  {
+    "id": 2,
+    "name": "Timeless Anarkali",
+    "category": "Anarkali Kurti",
+    "brand": "Clothing Palette",
+    "price": 1499,
+    "stock": 20,
+    "description": "Timeless Tradition Anarkali, a stunning piece that embodies the elegance and grace of classic Indian fashion.",
+    "image": "./images/anarkali_wear.png"
+    
+  },
+  {
+    "id": 3,
+    "name": "Cultural Chic Frenzy",
+    "category": "Flash Sale",
+    "brand": "Clothing Palette",
+    "price": 1299,
+    "stock": 10,
+    "description": "Cultural Chic Flash Frenzy, trendsetting pieces that capture the essence of cultural elegance and modern sophistication.",
+    "image": "./images/Sale_trend.jpg"
+    
+  },
+  {
+    "id": 4,
+    "name": "Celestial Chikankari",
+    "category": "Chikankari kurti",
+    "brand": "Clothing Palette",
+    "price": 1999,
+    "stock": 15,
+    "description": "This exquisite piece is designed to captivate with its ethereal elegance, combining intricate embroidery with modern sophistication.",
+    "image": "./images/chikankari_wear.jpg"
+    
+  },
+  {
+    "id": 5,
+    "name": "Straight Style",
+    "category": "Straight Cut Kurti",
+    "brand": "Clothing Palette",
+    "price": 1099,
+    "stock": 25,
+    "description": "Straight Forward Style kurti, a classic piece designed for the modern woman who values simplicity and sophistication.",
+    "image": "./images/straight_wear.jpg"
+    
+  },
+  {
+    "id": 6,
+    "name": "Urban Chic Shirt ",
+    "category": "Shirt Style Kurti",
+    "brand": "Clothing Palette",
+    "price": 999,
+    "stock": 10,
+    "description": "Urban Chic Shirt Kurti, a contemporary piece that combines the comfort of a shirt with the elegance of a kurti.",
+    "image": "./images/shirt_style.jpeg"
+    
+  }
+
+]

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Clothing-Palette, where comfort meets style in every
+              stitch. Discover our curated collection of women's wear designed
+              to make you feel fabulous and free. Our mission is to bring you
+              trendy, comfortable fashion that suits every occasion and every
+              body. Embrace your unique style with Clothing-Palette, because
+              true fashion is feeling good in what you wear. Comfortable Fashion
+              for Everyone – that's our promise to you. "
+    />
+    <meta
+      name="keywords"
+      content="Clothing-Palette, Women clothing, Clothing, E-commerce, Fashion"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Clothing-Palette</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free Shipping, 7-Day return and refund guarantee</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              src="./public/images/logo-cp.webp"
+              alt="clothing-palette-logo"
+              class="logo"
+              width="80%"
+              height="1%"
+            />
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="addToCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+                ><i class="fa-solid fa-cart-shopping"> 0 </i></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ========== Start Blog Section ========== -->
+    <div class="section-blog">
+      <div class="container">
+        <h2 class="section-common-heading">Explore Our Offers</h2>
+        <p class="section-common-subheading">
+          At Clothing-Palette, we believe in providing comfortable fashion for
+          everyone. Explore our offers and products today to find your new
+          favorite outfit!
+        </p>
+      </div>
+    </div>
+    <!-- ========== End Blog Section ========== -->
+
+    <!-- ========== Start Offer Section ========== -->
+    <section class="section-extra-product">
+      <div class="container grid grid-three--cols">
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>Welcome Discount</p>
+            <h3>
+              Get 15% off on your first purchase! <br />Use code WELCOME15 at
+              checkout.
+            </h3>
+            <a href="#">Shop Now</a>
+          </div>
+          <div class="extra-img extra-offer" data-aos="flip-left">
+            <img src="./public/images/offer1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>Rakhi Collection</p>
+            <h3>
+              Celebrate Rakhi with a special 20% off on all ethnic wear! <br />
+              Use code RAKHI20 at checkout.
+            </h3>
+            <a href="#">Shop Now</a>
+          </div>
+          <div class="extra-img extra-offer" data-aos="flip-left">
+            <img src="./public/images/offer2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>Flash Sale</p>
+            <h3>
+              Exclusive Flash Sale: 50% off on limited edition pieces.
+              <br />Once they're gone, they're gone!
+            </h3>
+            <a href="#">Shop Now</a>
+          </div>
+          <div class="extra-img extra-offer" data-aos="flip-left">
+            <img src="./public/images/offer3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Offer Section ========== -->
+
+    <!-- ========== Start contact Section ========== -->
+    <div class="section-contact">
+      <div class="container">
+        <h2 class="section-common-heading">Contact Us</h2>
+        <p class="section-common-subheading">
+          Get in touch with us we are always here to help you.
+        </p>
+      </div>
+
+      <div class="conatiner grid grid-two--cols">
+        <div class="contact-content">
+          <form action="#">
+            <div class="grid grid-two--cols mb-3">
+              <div>
+                <label for="username">Name</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  autocomplete="off"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+
+              <div>
+                <label for="email">Enter Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Your Email"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.554529724286!2d73.80463737378034!3d18.50382676968821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9c0786cc33%3A0x8831713d9c4d936d!2sNamoh%20Bags!5e0!3m2!1sen!2sin!4v1722945172638!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End contact Section ========== -->
+
+    <!-- ========== Start Footer Section ========== -->
+    <footer class="section-footer">
+      <script src="footer.js"></script>
+    </footer>
+    <!-- ========== End Footer Section ========== -->
+
+    <script type="module" src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
